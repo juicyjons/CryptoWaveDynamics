@@ -1042,7 +1042,6 @@ For a detailed understanding and deeper dive into the topics discussed, readers 
 - **Wilensky, U. (1999)**: [NetLogo (6.3.0)](http://ccl.northwestern.edu/netlogo/). *Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL*.
 - **Xie, H., & Zhang, J. (2012)**: [Bubbles and Experience: An Experiment with a Steady Inflow of New Traders (SSRN Scholarly Paper No. 1999041)](https://doi.org/10.2139/ssrn.1999041).
 
-
 @#$#@#$#@
 default
 true

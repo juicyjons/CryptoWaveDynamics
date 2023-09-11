@@ -1,10 +1,8 @@
-# Researcher's Guide & Basic User Companion
-
-## Abstract
-
-This research introduces a novel model developed to study the dynamics of financial markets, focusing on the interplay between traders' strategies and market fluctuations. Utilizing the NetLogo platform, the model simulates various trading strategies and their impacts on market stability. The findings highlight the significant influence of specific trader behaviors on market volatility, providing valuable insights for both academic research and practical market regulation. The model offers a unique perspective by combining elements of economic theories with computational simulation, aiming to bridge the gap between theoretical studies and real-world financial market dynamics.
+# Documentation
+*Researcher's Guide & Basic User Companion*
 
 ## Getting Started
+
 
 ### Overview
 This model was developed to explore the dynamics of financial markets by simulating various trading strategies and observing their impacts on market stability. It combines economic theories with computational simulation to offer a comprehensive understanding of market behaviors.
@@ -26,6 +24,8 @@ Note: For a detailed understanding of each parameter and its implications, refer
 
 
 ## Running the Model: A Basic Guide
+
+[CryptoWaveDynamics](https://juicyjons.github.io/CryptoWaveDynamics.html)
 
 ### Buttons:
 - **Setup**: Click this button first to initialize the model. It sets up the agents and defines the initial conditions based on the parameters set by the sliders and switches.

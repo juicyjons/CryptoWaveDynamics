@@ -1,6 +1,6 @@
 # CryptoWaveDynamics
 
-Dive into the intricate world of financial markets with the `CryptoWaveDynamics` model! Inspired by Bitcoin trading dynamics, this simulation explores the behaviors and strategies of financial agents and how they shape the market landscape.
+Dive into the intricate world of financial markets with the [`CryptoWaveDynamics](https://juicyjons.github.io/CryptoWaveDynamics.html) model! Inspired by Bitcoin trading dynamics, this simulation explores the behaviors and strategies of financial agents and how they shape the market landscape.
 
 ## Table of Contents
 - [What is it?](#what-is-it)

@@ -5,6 +5,7 @@
 Welcome to our agent-based financial market model! This innovative tool simulates the intricate dynamics of financial markets by considering diverse agent behaviors, market shocks, and even psychological factors like the Fear of Missing Out (FOMO). Whether you're a researcher, student, or just curious about financial markets, this model offers valuable insights into how different factors shape market outcomes.
 
 <iframe src="CryptoWaveDynamics.html" width="100%" height="1000px"></iframe>
+*View the [Model](CryptoWaveDynamics.html)  in a seperate window*
 
 ## Quickstart Guide
 
@@ -31,9 +32,8 @@ Welcome to our agent-based financial market model! This innovative tool simulate
 
 ## Documents
 
-- [ReadMe](../Readme.md)   
+- [ReadMe](../README.md)   
 - [Documentation](Documentation.md)  
-- View the [Model](CryptoWaveDynamics.html)  in a seperate window
 
 
 

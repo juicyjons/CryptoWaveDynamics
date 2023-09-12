@@ -6,5 +6,5 @@
 [View Model](CryptoWaveDynamics.html)
 
 <iframe src="CryptoWaveDynamics.html" width="100%" height="500px"></iframe>
-
+</br>
 {% include_relative Documentation.md %}

@@ -4,6 +4,10 @@
 
 [View Model](CryptoWaveDynamics.html)
 
+## Quickstart
+
+## Read me
 {% include_relative ../README.md %}
 
+## Documentation
 {% include_relative Documentation.md %}

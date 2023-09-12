@@ -335,13 +335,13 @@ end
 ; Function to update price based on current orders and random fluctuations
 to price-mechanics
   ; Generate random price fluctuation factor
-  set alpha  random-normal 0 rand-price-flucts
+  set alpha  random-normal 0 0.0025
 
   ; Update price based on the previous price, chart and fundamental orders, and the random factor
   set last-price2 last-price
   set last-price price
   set F2 F
-  set price (last-price + price-adj-coeff * (chart-orders * W-chart + fund-orders * W-fund) + alpha)
+  set price (last-price + (chart-orders * W-chart + fund-orders * W-fund) + alpha)
 
   ; Calculate returns based on the price change
   ifelse last-price = 0
@@ -368,6 +368,7 @@ end
 to change-probability
   ; Compare fitness of chartists and fundamentalists
   ; If chartists are more fit, they're less likely to become fundamentalists and vice versa
+  let prob_talk_change 0.45
   if (fit-chart > fit-fund)
   [
     set prob-change-chart-fund 0.5 - prob_talk_change ; Decrease the probability for chartists to become fundamentalists
@@ -407,6 +408,7 @@ to change-probability
 
   ; Calculate transition probabilities for agents to switch strategies
   ; This is based on current strategy weights and change probabilities
+  let prob-indep-change 0.1
   set trans-prob-chart-save (W-chart * (prob-indep-change + prob-change-chart-save * W-save))
   set trans-prob-chart-fund (W-chart * (prob-indep-change + prob-change-chart-fund * W-fund))
   set trans-prob-save-chart (W-save * (prob-indep-change + prob-change-save-chart * W-chart))
@@ -489,7 +491,7 @@ perc-talk
 perc-talk
 1
 50
-5.0
+7.0
 1
 1
 %
@@ -691,66 +693,6 @@ fund-react-param
 0.1
 0.01
 0.01
-1
-NIL
-HORIZONTAL
-
-SLIDER
-491
-253
-524
-404
-rand-price-flucts
-rand-price-flucts
-0.0005
-0.01
-0.0025
-0.0005
-1
-NIL
-VERTICAL
-
-SLIDER
-364
-369
-485
-402
-price-adj-coeff
-price-adj-coeff
-0.1
-2
-1.0
-0.1
-1
-NIL
-HORIZONTAL
-
-SLIDER
-185
-406
-346
-439
-prob_talk_change
-prob_talk_change
-0.1
-0.5
-0.45
-0.05
-1
-NIL
-HORIZONTAL
-
-SLIDER
-184
-446
-346
-479
-prob-indep-change
-prob-indep-change
-0.05
-0.5
-0.1
-0.05
 1
 NIL
 HORIZONTAL
@@ -1041,7 +983,6 @@ For a detailed understanding and deeper dive into the topics discussed, readers 
 - **Westerhoff, F. (2010)**: [A Simple Agent-based Financial Market Model: Direct Interactions and Comparisons of Trading Profits](https://doi.org/10.1007/978-3-642-04023-8_17). In G. I. Bischi, C. Chiarella, & L. Gardini (Eds.), *Nonlinear Dynamics in Economics, Finance and Social Sciences: Essays in Honour of John Barkley Rosser Jr (pp. 313–332)*. Springer.
 - **Wilensky, U. (1999)**: [NetLogo (6.3.0)](http://ccl.northwestern.edu/netlogo/). *Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL*.
 - **Xie, H., & Zhang, J. (2012)**: [Bubbles and Experience: An Experiment with a Steady Inflow of New Traders (SSRN Scholarly Paper No. 1999041)](https://doi.org/10.2139/ssrn.1999041).
-
 @#$#@#$#@
 default
 true

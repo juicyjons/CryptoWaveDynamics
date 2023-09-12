@@ -20,5 +20,5 @@ build/
 
 # Other
 *.bak
-Docs/Preprint.pdf
-test_docs
+docs/Preprint.pdf
+

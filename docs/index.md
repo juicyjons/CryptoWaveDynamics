@@ -32,7 +32,7 @@ Welcome to our agent-based financial market model! This innovative tool simulate
 
 ## Documents
 
-- [ReadMe](README.html)   
+- [ReadMe](README.html)
 - [Documentation](Documentation.md)  
 
 

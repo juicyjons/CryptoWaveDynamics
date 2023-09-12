@@ -31,9 +31,9 @@ Welcome to our agent-based financial market model! This innovative tool simulate
 
 ## Documents
 
-- [View the Model in a seperate window](CryptoWaveDynamics.html) 
-- [ReadMe](Readme.md)   
+- [ReadMe](../Readme.md)   
 - [Documentation](Documentation.md)  
+- View the [Model](CryptoWaveDynamics.html)  in a seperate window
 
 
 
